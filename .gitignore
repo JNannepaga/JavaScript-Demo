@@ -1,0 +1,8 @@
+# compiled output
+/build
+
+# IDEs and editors
+
+# Dependency directories
+node_modules/
+package-lock.json

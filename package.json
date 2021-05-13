@@ -1,0 +1,25 @@
+{
+  "name": "javascriptdemo",
+  "version": "1.0.0",
+  "description": "This is a Javascript Demo App that has Babel as transpiler browserify  to bundle up the JS scripts that in takes babelify as plugin to interact with transpiler",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve build",
+    "build": "browserify src/binding.js -o build/js/app-bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joseph Abhilash Nannepaga",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "serve": "^11.3.2"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
